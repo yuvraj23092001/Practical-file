@@ -1,4 +1,4 @@
-#### To check forleapyear  
+#### To check for leapyear  
 
 #include<stdio.h>  
 int main()  
