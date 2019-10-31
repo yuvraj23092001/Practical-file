@@ -10,3 +10,4 @@ result=m+n;
 printf("sum of two numbers is %.2f",result);
 return 0;
 }
+// by yuvraj khanna
