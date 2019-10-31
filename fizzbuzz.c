@@ -1,4 +1,4 @@
-#### fizzbuzz program
+//fizzbuzz program
 
 #include<stdio.h>  
 int main()  
@@ -17,4 +17,4 @@ printf("%d\n",d);
 return 0;  
 }
 
-*by yuvraj khanna*
+//by yuvraj khanna
