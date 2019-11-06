@@ -50,41 +50,41 @@ return 0;
   
 #### 3. WAP to Print weekdays, using switch  
   
-#include<stdio.h>  
-int main()              {  
-  
-int n;  
-printf("Enter weekday in number:  ");  
-scanf("%d",&n);  
- switch(n)
-{
-case 1:
-printf("Monday\n");    //Taking the business week
-break;
-case 2:
-printf("Tuesday\n");
-break;
-case 3:
-printf("Wednesday\n");
-break;
-case 4:
-printf("Thursday\n");
-break;
-case 5:
-printf("Friday\n");
-break;
-case 6:
-printf("Saturday\n");
-break;
-case 7:
-printf("Sunday\n");
-break;
-default:
-printf("Invalid Input\n");
+#include<stdio.h>    
+int main()      
+{   
+int n;    
+printf("Enter weekday in number:  ");    
+scanf("%d",&n);   
+ switch(n)  
+{  
+case 1:  
+printf("Monday\n");    //Taking the business week  
+break;  
+case 2:  
+printf("Tuesday\n");  
+break;  
+case 3:  
+printf("Wednesday\n");  
+break;  
+case 4:  
+printf("Thursday\n");  
+break;  
+case 5:  
+printf("Friday\n");  
+break;  
+case 6:  
+printf("Saturday\n");  
+break;  
+case 7:  
+printf("Sunday\n");  
+break;  
+default:  
+printf("Invalid Input\n");  
 }   
 return 0;    
   
-}  
+}   
 
 #### 4. WAP to find whether a number is Even or Odd.  
   
@@ -202,21 +202,21 @@ return 0;
   
 #### 9. WAP for Binary Search.  
   
-#include<stdio.h>  
+ #include<stdio.h>  
 int main()  
 {  
 int a[25],i,m,n,first=0,last,mid;  
-  
-printf("Enter the length of array:  ");  
+
+printf("Enter the length of array: ");    
 scanf("%d",&m);  
-printf("Enter %d elements in ascending order:  ",m);  
+printf("Enter %d elements in ascending order: ",m);  
 for(i=0 ; i<m ; i++)  
 scanf("%d",&a[i]);  
-  
-printf("Enter value to find:  ");  
+
+printf("Enter value to find: ");  
 scanf("%d",&n);  
-  
-last=n-1; &nbsp; &nbsp;//To initialise to last index position  
+
+last=n-1;    //To initialise to last index position  
 mid=(first+last)/2;  
 while(first<=last)  
 {  
@@ -224,20 +224,20 @@ if(a[mid]<n)
 first=mid+1;  
 else if(a[mid]==n)  
 {  
-printf("%d found at position #%d.\n",n,**mid+1**); &nbsp; &nbsp;//mid+1 done to display location & not index position     
+printf("%d found at position #%d.\n",n,mid+1);    //mid+1 done to display location & not index position  
 break;  
 }  
 else  
 last=mid-1;  
-                                                                                 
-mid=(first+last)/2;                                                           
+
+mid=(first+last)/2;  
 }  
-  
-if(**first>last**)  
-printf("%d not found in the entered array!\n",n); &nbsp; &nbsp;//Test expression turned false, which means desired element wasn't found   
-  
-return 0;                                                                     
-}  
+
+if(first>last)  
+printf("%d not found in the entered array!\n",n);    //Test expression turned false, which means desired element wasn't found
+
+return 0;  
+}       
   
 #### 10. WAP to find the Factorial of a number.  
   
