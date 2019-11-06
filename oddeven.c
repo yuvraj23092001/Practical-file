@@ -1,4 +1,4 @@
-#### To find whether number is even or odd
+
 
 #include<stdio.h>  
 int main()  
@@ -13,4 +13,3 @@ printf("a is odd");
 return 0;  
 }
 
-*by yuvraj khanna*
