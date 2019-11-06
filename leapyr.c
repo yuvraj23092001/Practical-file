@@ -1,4 +1,3 @@
-#### To check for leapyear  
 
 #include<stdio.h>  
 int main()  
@@ -13,4 +12,3 @@ printf("not a leap year\n");
 return 0;  
 } 
 
-*by yuvraj khanna*
