@@ -389,7 +389,10 @@ printf("a is equal to b.\n");
   
 return 0;  
 }  
-  
+  OUTPUT  
+Enter any 2 no.s: 5 4  
+a is greater.    
+
 #### 14. WAP to find the Greatest of three numbers.  
   
 #include<stdio.h>  
@@ -405,7 +408,7 @@ else
 largest=c;  
   
 return largest;  
-*}*  
+}
 int main()  
 {  
 printf("Enter 3 numbers:  ");  
@@ -413,8 +416,13 @@ scanf("%d %d %d",&a,&b,&c);
 printf("The largest of the 3 numbers entered is %d.\n",**largestof3(a,b,c)**); &nbsp; &nbsp;//Function call    
   
 return 0;  
-}  
-  
+} 
+
+OUTPUT  
+Enter 3 numbers: 33 34 35   
+The largest of the 3 numbers entered is 35. 
+
+
 #### 15. WAP to find G.C.D. of two numbers.  
   
 #include<stdio.h>  
@@ -433,7 +441,11 @@ printf("GCD of %d and %d is %d.\n",n1,n2,gcd);
   
 return 0;  
 }  
-  
+OUTPUT  
+Enter 3 numbers: 33 34 35  
+The largest of the 3 numbers entered is 35.   
+
+
 #### 16. WAP to find whether the year is Leap year or not.  
   
 #include<stdio.h>    
@@ -451,7 +463,11 @@ printf("Not a Leap Year\n");
   
 return 0;  
 }  
-  
+
+  OUTPUT  
+Enter an year: 2016  
+Leap Year  
+
 #### 17. WAP for Linear Search.  
   
 #include<stdio.h>  
@@ -478,8 +494,14 @@ printf("Number is found \n");
 else  
 printf("Number is not found \n");  
 return 0;  
-}  
-  
+}    
+
+  OUTPUT  
+Enter the length of array: 5  
+Enter 5 elements: 1 3 4 2 0  
+Enter the number you wish to find: 4  
+Search is successful. Element present at #3  
+
 #### 18. WAP for Matrix Addition.  
   
 #include<stdio.h>  
@@ -518,7 +540,12 @@ printf("%.1f ",m3[i][j]);
 printf("\n\n");  
   
 }  
-  
+  OUTPUT  
+Enter the length of array: 5  
+Enter 5 elements: 1 3 4 2 0  
+Enter the number you wish to find: 4  
+Search is successful. Element present at #3  
+
 #### 19. WAP to find Transpose of a matrix.  
   
 #include<stdio.h>  
@@ -550,7 +577,19 @@ printf("%d ",b[i][j]);
 }  
 printf("\n\n");  
 }  
+ OUTPUT  
+Enter size of Matrix A as m,n: 2 2  
   
+Enter elements of Matrix A row wise  
+4 5  
+6 7  
+
+Transpose is  
+
+4 6  
+5 7  
+
+
 #### 20. WAP to find the Sum of digits of a number.  
   
 #include<stdio.h>                                                             
@@ -574,7 +613,10 @@ printf("\n Sum of digits of %d = %d \n",n,sum);
   
 return 0;  
 }  
-  
+ OUTPUT  
+Enter any +ve integer: 334  
+
+Sum of digits of 334 = 10  
 #### 21. WAP to check whether the number is Palindrome or not.  
   
 #include<stdio.h>  
@@ -599,7 +641,12 @@ printf("\n%d is not a palindrome number.\n",n);
   
 return 0;  
 }  
-  
+ OUTPUT  
+Enter any +ve integer: 313  
+
+313 is a palindrome number.   
+
+
 #### 22. WAP to swap 2 numbers using Call by Value method.  
   
 #include<stdio.h>  
@@ -631,8 +678,26 @@ temp = a;
 a = b;  
 b = temp;  
 printf("\n Value of a = %d, value of b = %d after swap\n",a,b);  
-*}*  
+}  
+OUTPUT  
+Enter value for x: 10  
   
+Enter value for y: 12  
+  
+Before calling swap function  
+  
+Value of x = 10, value of y = 12  
+  
+Inside the function  
+  
+Value of a = 10, value of b = 12 before swap  
+  
+Value of a = 12, value of b = 10 after swap  
+  
+After returning from swap function  
+Value of x = 10, value of y = 12   
+
+
 #### 23. WAP to swap 2 numbers using Call by Reference method.  
   
 #include<stdio.h>  
@@ -662,19 +727,38 @@ temp = *a;
 *a = *b;  
 *b = temp;  
 printf("\nValue of *a=%d, value of *b=%d after swap\n",*a,*b);  
-*}*  
-  
+}  
+  OUTPUT  
+Enter value for x: 10  
+
+Enter value for y: 12  
+
+Before calling swap function  
+
+Value of x=10, value of y=12  
+
+Inside the function  
+
+Value of *a=10, value of *b=12 before swap  
+
+Value of *a=12, value of *b=10 after swap  
+
+After returning from swap function  
+
+Value of x=12, value of y=10  
+
+
 #### 24. WAP to enter the details of Employees using structures.  
   
 #include<stdio.h>  
   
 **struct employee** &nbsp; &nbsp;//Structure definition  
-*{*  
+{    
 int code;  
 char name[25];  
 char dept[15];  
 float salary;  
-*};*  
+};   
   
 void main()  
 {  
@@ -692,7 +776,18 @@ printf("Particulars of Employee are\n");
 printf("Employee's code:  %d\nEmployee's name:  %s\nEmployee's department:  %s\nEmployee's salary:  %.2f\n\n",Aemployee.code,Aemployee.name,Aemployee.dept,Aemployee.salary);  
   
 }  
-  
+  OUTPUT  
+Enter Employee's code: 21  
+Enter Employee's name: yuvraj  
+Enter Employee's department: CSE  
+Enter Employee's salary: 80000  
+Particulars of Employee are  
+Employee's code: 21  
+Employee's name: yuvraj  
+Employee's department: CSE  
+Employee's salary: 80000.00  
+
+
 #### 25. WAP to find the Product of fractions using structures.  
   
 #include<stdio.h>  
@@ -719,3 +814,14 @@ printf("The resultant product fraction is %.2f/%.2f.\n",res.num,res.denom);
   
 return 0;  
 }  
+OUTPUT  
+Enter Employee's code: 21  
+Enter Employee's name: yuvi  
+Enter Employee's department code: 101  
+Enter Employee's salary: 80000  
+
+Particulars of Employee are  
+Employee's code: 21  
+Employee's name: yuvi  
+Employee's department code: 101  
+Employee's salary: 80000.00  
