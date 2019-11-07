@@ -26,7 +26,12 @@ printf("Sum of 1st & 2nd number is = %.2f\n",sum);
   
 return 0;  
 }  
-
+### OUTPUT  
+Enter 1st,2nd number:  5 6  
+Sum of 1st & 2nd number is = 11.00  
+  
+### CODE  
+  
 #### 2. WAP to find the Average of 'n' numbers.  
   
 #include<stdio.h>  
@@ -47,7 +52,14 @@ printf("Average is %.2f.\n",avg);
   
 return 0;  
 }  
+### OUTPUT  
   
+Enter number of elements:  5  
+Enter 5 elements:  4 5 6 7 8  
+Average is 6.00.  
+  
+### CODE  
+    
 #### 3. WAP to Print weekdays, using switch  
   
 #include<stdio.h>    
@@ -85,7 +97,11 @@ printf("Invalid Input\n");
 return 0;    
   
 }   
-
+### OUTPUT  
+Enter weekday in number:  2  
+Tuesday  
+  
+### CODE  
 #### 4. WAP to find whether a number is Even or Odd.  
   
 #include<stdio.h>  
@@ -103,7 +119,11 @@ printf("Number is odd.\n");
 return 0;  
   
 }  
+ ### OUTPUT  
+Enter a number:  77  
+Number is odd.  
   
+### CODE   
 #### 5. WAP to Print the table of 2 using for loop.  
   
 #include<stdio.h>  
@@ -147,7 +167,10 @@ printf("The entered number is not an Armstrong number.\n");
   
 return 0;  
 }  
-  
+ ### OUTPUT  
+Enter any positive integer:  153  
+The entered number is an Armstrong number.  
+    
 #### 7. WAP to Print calculator using puts.  
   
 #include<stdio.h>  
@@ -199,7 +222,16 @@ printf("\n");
   
 return 0;  
 }  
+### OUTPUT  
+Enter size of array:  5  
   
+Enter 5 elements of array.  
+5 4 2 1 8  
+  
+Array elements after sorting..  
+1 2 4 5 8  
+  
+### CODE    
 #### 9. WAP for Binary Search.  
   
  #include<stdio.h>  
@@ -238,7 +270,13 @@ printf("%d not found in the entered array!\n",n);    //Test expression turned fa
 
 return 0;  
 }       
+  ### OUTPUT  
+Enter the length of array:  4  
+Enter 4 elements in ascending order:  2 6 7 9  
+Enter value to find:  7  
+7 found at position #3.  
   
+### CODE  
 #### 10. WAP to find the Factorial of a number.  
   
 #include<stdio.h>  
@@ -255,7 +293,10 @@ printf("\n%d! = %d\n",n,fac);
   
 return 0;  
 }  
+ ### OUTPUT  
+Enter number which you want to get factorial of:  6  
   
+6! = 720   
 #### 11. WAP for Fizz-Buzz.  
   
 #include<stdio.h>  
@@ -279,7 +320,37 @@ printf("%d\n",d);
 return 0;  
   
 }  
-  
+### OUTPUT  
+1  
+2  
+Fizz  
+4  
+Buzz  
+Fizz  
+7  
+8  
+Fizz  
+Buzz  
+11  
+Fizz  
+13  
+14  
+FizzBuzz  
+16  
+17  
+Fizz  
+19  
+Buzz  
+Fizz  
+22  
+23  
+Fizz  
+Buzz  
+26  
+Fizz  
+28  
+29  
+FizzBuzz    
 #### 12. WAP to find the Sum of first 100 numbers.  
   
 #include<stdio.h>    
@@ -296,7 +367,10 @@ printf("Sum of first 100 +ve integers = %d\n",sum);
   
 return 0;  
 }  
+  ### OUTPUT  
+Sum of first 100 +ve integers = 5050  
   
+### CODE 
 #### 13. WAP to find the Greater of two numbers.  
   
 #include<stdio.h>  
