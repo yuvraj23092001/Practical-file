@@ -383,38 +383,27 @@ return 0;
 #include<stdio.h>  
 int main()  
 {  
-int a[25],i,m,n,first=0,last,mid;  
-  
-printf("Enter the length of array:  ");  
-scanf("%d",&m);  
-printf("Enter %d elements in ascending order:  ",m);  
-for(i=0 ; i<m ; i++)  
+int a[5],i,s,f;  
+printf("Enter 5 numbers\n");  
+for(i=0;i<5;i++)  
+{  
 scanf("%d",&a[i]);  
-  
-printf("Enter value to find:  ");  
-scanf("%d",&n);  
-  
-last=n-1; &nbsp; &nbsp;//To initialise to last index position  
-mid=(first+last)/2;  
-while(first<=last)  
+}  
+printf("Enter number to be searched\n");  
+scanf("%d",&s);  
+for(i=0;i<5;i++)  
 {  
-if(a[mid]<n)  
-first=mid+1;  
-else if(a[mid]==n)  
+if(s==a[i])  
 {  
-printf("%d found at position #%d.\n",n,**mid+1**); &nbsp; &nbsp;//mid+1 done to display location & not index position   
+f=1;  
 break;  
 }  
-else  
-last=mid-1;  
-                                                                                   
-mid=(first+last)/2;                                                           
 }  
-  
-if(**first>last**)    
-printf("%d not found in the entered array!\n",n); &nbsp; &nbsp;//Test expression turned false, which means desired element wasn't found  
-  
-return 0;                                                                     
+if(f==1)  
+printf("Number is found \n");  
+else  
+printf("Number is not found \n");  
+return 0;  
 }  
   
 #### 18. WAP for Matrix Addition.  
