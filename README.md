@@ -210,8 +210,8 @@ int a[25],i,m,n,first=0,last,mid;
 printf("Enter the length of array: ");    
 scanf("%d",&m);  
 printf("Enter %d elements in ascending order: ",m);  
-for(i=0 ; i<m ; i++)  
-scanf("%d",&a[i]);  
+for(i=0 ; i<m ; i++) { 
+scanf("%d",&a[i]); } 
 
 printf("Enter value to find: ");  
 scanf("%d",&n);  
